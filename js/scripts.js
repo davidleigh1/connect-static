@@ -478,6 +478,7 @@ function saveSettings() {
     console.log("Updated localStorage > connect", JSON.parse(localStorage.getItem("connect")));
     // Update UI in case name has changed
     updateStats();
+    $("#playerSettingsModal").modal('hide');
 }
 
 function updateFromLocalStorage(obj) {
